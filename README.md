@@ -5,24 +5,28 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](/LICENSE.md)
 
 ### News
-27-Jul-2017
+Jul 2, 2017 - Published version 1.0.0 on Google Play Store
+
+Jul 2, 2017 - Migration from old repository (KrixiAndroidChallenge)
+
+Jan 25, 2017 - Created & released version 0.0.1
 
 ### Description
-An Android app which suggests user what to wear today by showing a pair of cloths, i.e. Shirt & Pant. For working implementation of this project please see the <b>app</b> folder. Watching this repo will allow
+An Android app which suggests user what to wear today by showing a pair of cloths, i.e. Shirt & Pant. For working implementation of this project please see the <b>app</b> folder. Watching this repository will subscribe you for latest updates.
 
 Feel free to open an issue or Pull request.
 
 ### Sample Project
 You can download the latest sample APK from [here](https://github.com/Onkarn92/SuggestMe/tree/master/Sample/SuggestMe.apk).
 
-or It's also available on Google Play Store:
+or It's also available on Google Play Store -
 
 <a href="https://play.google.com/store/apps/details?id=com.onkarnene.suggestme" target="_blank">
   <img alt="Get it on Google Play"
        src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="60"/>
 </a>
 
-### Third-party Libraries
+### Third-Party Libraries
 <ul>
 <li><a href="https://github.com/JakeWharton/butterknife">Butterknife</a></li>
 <li><a href="https://github.com/bumptech/glide">Glide</a></li>
