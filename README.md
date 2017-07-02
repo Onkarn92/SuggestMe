@@ -4,7 +4,7 @@
 [![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg?maxAge=2592000)]()
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](/LICENSE.md)
 
-<img src="https://raw.github.com/Onkarn92/SuggestMe/tree/master/Sample/Screens.gif" width="300" height="557">
+<img src="https://raw.githubusercontent.com/Onkarn92/SuggestMe/master/Sample/Screens.gif" width="300" height="557">
 
 ## Changelog
 - Jul 2, 2017 - Published version 1.0.0 on Google Play Store
