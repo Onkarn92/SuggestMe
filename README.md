@@ -17,9 +17,9 @@ An Android app which suggests user what to wear today by showing a pair of cloth
 Feel free to open an issue or Pull request.
 
 ## Sample Project
-You can download the latest sample APK from [here](https://github.com/Onkarn92/SuggestMe/tree/master/Sample/SuggestMe.apk).
+You can download the latest sample APK from [here](https://github.com/Onkarn92/SuggestMe/tree/master/Sample).
 
-or It's also available on Google Play Store -
+or It's also available on Google Play Store-
 
 <a href="https://play.google.com/store/apps/details?id=com.onkarnene.suggestme" target="_blank">
   <img alt="Get it on Google Play"
