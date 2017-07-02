@@ -23,7 +23,7 @@ hs_err_pid*
 
 # Implementation File
 *.iml
-
+.gradle
 /local.properties
 /.idea/copyright
 /.idea/workspace.xml
