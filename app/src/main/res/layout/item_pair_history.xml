@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/value_5"
+    android:layout_marginEnd="@dimen/value_10"
+    android:layout_marginLeft="@dimen/value_10"
+    android:layout_marginRight="@dimen/value_10"
+    android:layout_marginStart="@dimen/value_10"
+    android:layout_marginTop="@dimen/value_5"
+    card_view:cardCornerRadius="@dimen/cardview_default_radius"
+    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/editTextBgColor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/savedShirtImage"
+            android:layout_width="@dimen/value_150"
+            android:layout_height="@dimen/value_150"
+            android:layout_weight="1"
+            android:contentDescription="@string/shirt"
+            android:scaleType="centerCrop"
+            android:src="@drawable/place_holder"/>
+
+        <ImageView
+            android:id="@+id/savedPantImage"
+            android:layout_width="@dimen/value_150"
+            android:layout_height="@dimen/value_150"
+            android:layout_weight="1"
+            android:contentDescription="@string/pant"
+            android:scaleType="centerCrop"
+            android:src="@drawable/place_holder"/>
+
+        <ImageView
+            android:id="@+id/shareImageIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/share"
+            android:src="@drawable/ic_share"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

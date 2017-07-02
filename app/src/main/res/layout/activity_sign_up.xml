@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBgColor"
+    tools:context="com.onkarnene.suggestme.views.signup.SignUpActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/signUpToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@drawable/ic_arrow_back_white"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay"
+            app:title="@string/create_account"
+            app:titleTextColor="@android:color/white"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/value_20"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/firstNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginBottom="@dimen/value_10"
+                android:background="@drawable/bg_rect_edit_text"
+                android:hint="@string/firstName"
+                android:inputType="text"
+                android:padding="@dimen/value_10"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/textHintColor"/>
+
+            <EditText
+                android:id="@+id/surnameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginBottom="@dimen/value_10"
+                android:layout_marginTop="@dimen/value_10"
+                android:background="@drawable/bg_rect_edit_text"
+                android:hint="@string/surname"
+                android:inputType="text"
+                android:padding="@dimen/value_10"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/textHintColor"/>
+
+            <EditText
+                android:id="@+id/emailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginBottom="@dimen/value_10"
+                android:layout_marginTop="@dimen/value_10"
+                android:background="@drawable/bg_rect_edit_text"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/value_10"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/textHintColor"/>
+
+            <EditText
+                android:id="@+id/passwordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginBottom="@dimen/value_10"
+                android:layout_marginTop="@dimen/value_10"
+                android:background="@drawable/bg_rect_edit_text"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="@dimen/value_10"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/textHintColor"/>
+
+            <EditText
+                android:id="@+id/mobileNumberEdit"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginBottom="@dimen/value_10"
+                android:layout_marginTop="@dimen/value_10"
+                android:background="@drawable/bg_rect_edit_text"
+                android:hint="@string/mobileNumber"
+                android:inputType="number"
+                android:padding="@dimen/value_10"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/textHintColor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginBottom="@dimen/value_10"
+                android:layout_marginTop="@dimen/value_10"
+                android:background="@drawable/bg_rect_edit_text"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dobText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:hint="@string/dob"
+                    android:padding="@dimen/value_10"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/textHintColor"
+                    android:textSize="@dimen/size_16"/>
+
+                <ImageView
+                    android:id="@+id/datePickerImage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:contentDescription="@string/dob"
+                    android:padding="@dimen/value_5"
+                    android:src="@drawable/ic_date_picker"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/signUpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/value_20"
+                android:layout_marginTop="@dimen/value_20"
+                android:background="@drawable/bg_rect_button"
+                android:padding="@dimen/value_10"
+                android:text="@string/signUp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/size_18"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

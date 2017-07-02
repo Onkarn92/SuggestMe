@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.onkarnene.suggestme">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/ic_splash"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ic_splash"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name="com.onkarnene.suggestme.views.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.onkarnene.suggestme.views.login.LoginActivity"/>
+        <activity android:name="com.onkarnene.suggestme.views.signup.SignUpActivity"/>
+        <activity android:name="com.onkarnene.suggestme.views.addphoto.AddPhotoActivity"/>
+        <activity
+            android:name="com.onkarnene.suggestme.views.suggestpair.SuggestPairActivity"
+            android:label="@string/title_activity_suggest_pair"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name="com.onkarnene.suggestme.views.history.PairHistoryActivity"/>
+
+        <meta-data
+            android:name="com.onkarnene.suggestme.utils.GlideConfig"
+            android:value="GlideModule"/>
+    </application>
+</manifest>

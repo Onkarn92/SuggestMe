@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBgColor"
+    android:fitsSystemWindows="true"
+    tools:context="com.onkarnene.suggestme.views.suggestpair.SuggestPairActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/suggestPairAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/suggestPairToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay"
+            app:title="@string/suggest_pair"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value_5"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/value_10"
+                        android:padding="@dimen/value_5"
+                        android:text="@string/shirt"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorOrange"/>
+
+                    <ImageView
+                        android:id="@+id/suggestedShirtImage"
+                        android:layout_width="@dimen/value_150"
+                        android:layout_height="@dimen/value_150"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/select_shirt"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/place_holder"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value_5"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/value_5"
+                        android:padding="@dimen/value_10"
+                        android:text="@string/pant"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorOrange"/>
+
+                    <ImageView
+                        android:id="@+id/suggestedPantImage"
+                        android:layout_width="@dimen/value_150"
+                        android:layout_height="@dimen/value_150"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/select_shirt"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/place_holder"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dislikeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/value_20"
+                android:layout_marginLeft="@dimen/value_20"
+                android:layout_marginRight="@dimen/value_20"
+                android:layout_marginStart="@dimen/value_20"
+                android:layout_marginTop="@dimen/value_20"
+                android:background="@drawable/bg_rect_button_fill"
+                android:padding="@dimen/value_10"
+                android:text="@string/dislike"
+                android:textAllCaps="false"
+                android:textColor="@color/layoutBgColor"/>
+
+            <Button
+                android:id="@+id/savePairBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/value_20"
+                android:layout_marginLeft="@dimen/value_20"
+                android:layout_marginRight="@dimen/value_20"
+                android:layout_marginStart="@dimen/value_20"
+                android:layout_marginTop="@dimen/value_10"
+                android:background="@drawable/bg_rect_button"
+                android:padding="@dimen/value_10"
+                android:text="@string/save_pair"
+                android:textAllCaps="false"
+                android:textColor="@color/colorOrange"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_format_list"
+        app:backgroundTint="@color/colorOrange"
+        app:fabSize="normal"/>
+</android.support.design.widget.CoordinatorLayout>

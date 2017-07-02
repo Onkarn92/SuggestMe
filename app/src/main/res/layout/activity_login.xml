@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBgColor"
+    tools:context="com.onkarnene.suggestme.views.login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/value_20"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/usernameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginBottom="@dimen/value_10"
+            android:background="@drawable/bg_rect_edit_text"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/value_10"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/textHintColor"/>
+
+        <EditText
+            android:id="@+id/passwordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginBottom="@dimen/value_10"
+            android:layout_marginTop="@dimen/value_10"
+            android:background="@drawable/bg_rect_edit_text"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="@dimen/value_10"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/textHintColor"/>
+
+        <Button
+            android:id="@+id/signInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/value_20"
+            android:layout_marginTop="@dimen/value_20"
+            android:background="@drawable/bg_rect_button"
+            android:padding="@dimen/value_10"
+            android:text="@string/signIn"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/size_18"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/newUserText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/value_40"
+            android:fontFamily="serif"
+            android:text="@string/newUser"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/size_16"
+            android:textStyle="bold"
+            tools:targetApi="jelly_bean"/>
+    </LinearLayout>
+</RelativeLayout>
