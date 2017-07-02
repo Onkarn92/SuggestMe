@@ -22,7 +22,7 @@ android {
             jniDebuggable true
         }
         release {
-            debuggable true
+            debuggable false
             jniDebuggable true
             shrinkResources false
             zipAlignEnabled true

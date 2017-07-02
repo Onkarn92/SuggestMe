@@ -23,7 +23,7 @@ hs_err_pid*
 
 # Implementation File
 *.iml
-.gradle
+/.gradle
 /local.properties
 /.idea/copyright
 /.idea/workspace.xml
@@ -36,4 +36,5 @@ hs_err_pid*
 .DS_Store
 /build
 /captures
+/App_Icons
 .externalNativeBuild
